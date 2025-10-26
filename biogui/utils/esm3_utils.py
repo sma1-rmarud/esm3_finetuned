@@ -6,7 +6,7 @@ import subprocess
 import os
 import json
 from pathlib import Path
-from ours_model.inference import run as run_ours_model
+from biogui.utils.ours_model.inference import run as run_ours_model
 
 
 def run_alphafold(protein_name: str,ligand_name: str):

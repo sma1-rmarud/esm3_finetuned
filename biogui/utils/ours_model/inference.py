@@ -2,9 +2,9 @@
 import torch, pandas as pd
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-from dataset import FitnessDataset
-from model import ESM3WithFitnessHead
-from utils import spearman_corr, custom_collate_fn
+from .dataset import FitnessDataset
+from .model import ESM3WithFitnessHead
+from .utils import custom_collate_fn
 from esm.utils.constants.models import ESM3_OPEN_SMALL
 from esm.pretrained import load_local_model
 

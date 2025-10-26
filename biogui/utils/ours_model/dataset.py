@@ -3,7 +3,7 @@ import torch
 from torch.utils.data import Dataset
 import pandas as pd
 
-from utils import load_structure_from_cif, parse_ligand_from_cif
+from .utils import load_structure_from_cif, parse_ligand_from_cif
 
 class FitnessDataset(Dataset):
     def __init__(self, csv_path, structure_dir, esm_model):
